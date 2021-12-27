@@ -1,23 +1,17 @@
-import CounterStore from './CounterStore'
+import NoteStore from './NoteStore'
 
 function App() {
     return (
         <>
             <h1>React App</h1>
-            <div>{CounterStore.getState()}</div>
-            <button
-                onClick={(e) => CounterStore.dispatch({ type: 'INCREMENT' })}
-            >
-                plus
-            </button>
-            <button
-                onClick={(e) => CounterStore.dispatch({ type: 'DECREMENT' })}
-            >
-                minus
-            </button>
-            <button onClick={(e) => CounterStore.dispatch({ type: 'ZERO' })}>
-                reset
-            </button>
+            <u1>
+                {NoteStore.getState().map((note) => (
+                    <li key={note.id}>
+                        {note.content}{' '}
+                        <strong>{note.important ? 'important' : ''}</strong>
+                    </li>
+                ))}
+            </u1>
         </>
     )
 }

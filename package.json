@@ -1,22 +1,34 @@
 {
-  "name": "redux-demo",
-  "version": "0.0.0",
-  "scripts": {
-    "lint": "npx eslint --ext .js,.jsx src",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "redux": "^4.1.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^1.0.7",
-    "eslint": "^8.4.1",
-    "eslint-plugin-react": "^7.27.1",
-    "prettier": "^2.5.1",
-    "vite": "^2.7.2"
-  }
+    "name": "redux-demo",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
+        "lint": "npx eslint --ext .js,.jsx src",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "jest": {
+        "extensionsToTreatAsEsm": [
+            ".jsx"
+        ]
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "redux": "^4.1.2"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.1",
+        "@testing-library/react": "^12.1.2",
+        "@vitejs/plugin-react": "^1.0.7",
+        "cross-env": "^7.0.3",
+        "deep-freeze": "^0.0.1",
+        "eslint": "^8.4.1",
+        "eslint-plugin-react": "^7.27.1",
+        "jest": "^27.4.5",
+        "prettier": "^2.5.1",
+        "vite": "^2.7.2"
+    }
 }
