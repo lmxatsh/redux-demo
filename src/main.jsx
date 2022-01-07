@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 import App from './App'
-import CounterStore from './CounterStore'
+import noteReducer from './reducer/noteReducer'
 
-const renderApp = () => {
-    ReactDOM.render(
-        <React.StrictMode>
+const store = createStore(noteReducer)
+
+ReactDOM.render(
+    <React.StrictMode>
+        <Provider store={store}>
             <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    )
-}
-renderApp()
-CounterStore.subscribe(renderApp)
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
+)
