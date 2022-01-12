@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "content": "app info",
+      "important": true,
+      "id": 1
+    },
+    {
+      "content": "redux info",
+      "important": false,
+      "id": 2
+    },
+    {
+      "content": "test1",
+      "important": false,
+      "id": 3
+    },
+    {
+      "content": "jsonserver",
+      "important": false,
+      "id": 4
+    },
+    {
+      "content": "test2",
+      "important": false,
+      "id": 5
+    }
+  ]
+}
