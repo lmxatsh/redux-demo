@@ -24,6 +24,16 @@
       "content": "test2",
       "important": false,
       "id": 5
+    },
+    {
+      "content": "redux app",
+      "important": false,
+      "id": 6
+    },
+    {
+      "content": "redux app",
+      "important": false,
+      "id": 7
     }
   ]
 }
