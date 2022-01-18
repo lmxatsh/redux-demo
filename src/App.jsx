@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux'
 import Notes from './Notes'
 import NewNote from './NewNote'
 import VisibilityFilter from './VisibilityFilter'
+import AnecdoteForm from './AnecdoteForm'
+import AnecdoteList from './AnecdoteList'
 
 function App() {
     const dispatch = useDispatch()
@@ -18,6 +20,9 @@ function App() {
             <NewNote />
             <VisibilityFilter />
             <Notes />
+            <h1>Anecdotes</h1>
+            <AnecdoteForm />
+            <AnecdoteList />
         </>
     )
 }
